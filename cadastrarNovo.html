@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Gerenciador de Contas</title>
+      <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+    </head>
+  <body>
+    <!--Bootstrap nav bar padrão -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="main.php">Gerenciador de Contas</a>
+        </div>      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="cadastrarNovo.html">Cadastrar Novo</a></li>
+            <li><a href="relatorios.php">Relatório Anual</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Bootstrap nav bar padrão-->
+
+    <!--Cabeçalho -->
+    <div class="page-header">
+      <h3>Cadastrar Nova Conta</h3>
+    </div>
+    <!--Cabeçalho -->
+
+    <!-- Formulário de cadastro de boleto -->
+    <form method = "post" action = "cadastrarNovo.php">
+
+      <div class = "panel panel-default">
+        <div class = "panel-body">
+
+          <div class="input-group">
+            <span class="input-group-addon">Número</span>
+            <input type="number" name = "numero" class="form-control" placeholder="0000000000">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Código</span>
+            <input type="text" name = "codigo" class="form-control" placeholder="0000000000">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Vencimento</span>
+            <input type="date" name="vencimento" class="form-control" placeholder="dd/mm/aaaa">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Valor</span>
+            <input type="text" name = "valor" class="form-control" placeholder="000.00">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Sacado</span>
+            <input type="text" name = "sacado" class="form-control" placeholder="Ex: José">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Cedente</span>
+            <input type="text" name = "cedente" class="form-control" placeholder="Ex: Maria">
+          </div>
+          <br/>
+
+          <div class="input-group">
+            <span class="input-group-addon">Banco</span>
+            <input type="text" name = "banco" class="form-control" placeholder="Ex: Santander">
+          </div>
+          <br/>
+
+          <label><input type="checkbox" name = "pago" value="1"> Pago?</label></br>
+
+          <input type="submit" class = "btn btn-default" value="Cadastrar"/>
+        </div>
+      </div>
+
+    </form>
+     <!-- Formulário de cadastro de boleto -->
+  </body>
+</html>
